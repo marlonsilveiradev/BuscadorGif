@@ -102,6 +102,7 @@ p {
     input {
         width: 15rem;
         margin-bottom: 5px;
+        font-size: 16px;
     }
     
     p {
