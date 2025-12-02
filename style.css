@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: #484848e5;
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    font-family: "Merriweather", serif;
+    border-radius: 20px;
+    width: 80%;
+    background-color: #9758a6;
+    color: #fff;
+    border: none;
+    height: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button:hover {    
+    scale: 1.1;
+    background-color: #7f04a5;
+}
+
+input {
+    font-family: "Merriweather", serif;
+    padding: 3px 0 3px 5px;
+    width: 150%;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #9758a6;
+}
+
+label {
+    font-family: "Road Rage", sans-serif;
+    color: #fff;
+    font-size: 48px;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 30rem;
+    margin: 0 20px;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+p {
+    color: #fff;
+    font-size: 36px;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        gap: 10px;
+    }
+    .input-content {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .wrapper{
+        gap: 30px;
+    }
+    
+    .img-content {
+        height: 15rem;
+        width: 18rem;
+    }
+
+    input {
+        width: 15rem;
+        margin-bottom: 5px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+}
+
